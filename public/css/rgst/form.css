@@ -1,0 +1,81 @@
+.bl_rgstForm_wrapper {
+  border:1px solid #ddd;
+  margin: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.bl_rgstForm {
+  /* border:1px solid #ddd; */
+  margin: 0 auto;
+  /* padding-right: 30px;
+  padding-left: 30px; */
+}
+.bl_rgstForm label {
+  display: block;
+  margin-top: 20px;
+}
+/* .bl_rgstForm input { */
+.bl_rgstForm input[type="text"]{
+  /* width: 100%; */
+  width: 70%;
+  /* border-radius: 5px; */
+}
+.bl_rgstForm textarea {
+  width: 70%;
+  /* border-radius: 5px; */
+}
+.bl_rgstForm th:last-child,
+.bl_rgstForm td:last-child {
+  border-right-width: 0;
+}
+.bl_rgstForm tbody tr:last-child td {
+  border-bottom-width: 0;
+}
+.bl_rgstForm_err {
+  color: red;
+}
+.bl_btnUnit {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px;
+}
+.el_btn {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 20px 10px;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16);
+  color: #fff;
+  font-size: 1.125em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .10s;
+}
+.el_btn:focus,
+.el_btn:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}
+/* メディアクエリ適用時 */
+@media screen and (max-width: 768px) {
+  .bl_rgstForm {
+    border-right-width: 0;
+    overflow-x: auto;
+  }
+  .bl_rgstForm table {
+    width: auto;
+    min-width: 100%;
+  }
+  .bl_rgstForm th,
+  .bl_rgstForm td {
+    white-space: nowrap;
+  }
+  .bl_rgstForm th:last-child,
+  .bl_rgstForm td:last-child {
+    border-right-width: 1px;
+  }
+}
